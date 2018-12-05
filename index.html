@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        Customize the content security policy in the meta tag below as needed. Add 'unsafe-inline' to default-src to enable inline JavaScript.
+        For details, see http://go.microsoft.com/fwlink/?LinkID=617521
+    -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <title>ZOP</title>
+</head>
+<body>
+
+    <!-- Start of first page: #one -->
+    <div data-role="page" id="one">
+
+        <div data-role="header">
+            <h1>Маленький помощник учителя</h1>
+        </div><!-- /header -->
+
+        <div role="main" class="ui-content">
+
+            <table data-role="table" id="movie-table-custom" data-mode="reflow" class="movie-list ui-responsive">
+                <thead>
+                    <tr>
+                        <th data-priority="1">ФИО</th>
+                        <th data-priority="2" class="zopHead">Завтрак</th>
+                        <th data-priority="3" class="zopHead">Обед</th>
+                        <th data-priority="4" class="zopHead">Ужин</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="fio">Иванов И.И.</span></td>
+                        <td><input type="checkbox" name="checkbox-01" id="cb-01"></td>
+                        <td><input type="checkbox" name="checkbox-02" id="cb-02"></td>
+                        <td><input type="checkbox" name="checkbox-03" id="cb-03"></td>
+                    </tr>
+                    <tr>
+                        <td><span class="fio">Иванов И.И.</span></td>
+                        <td><input type="checkbox" name="checkbox-01" id="cb-01"></td>
+                        <td><input type="checkbox" name="checkbox-02" id="cb-02"></td>
+                        <td><input type="checkbox" name="checkbox-03" id="cb-03"></td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div><!-- /content -->
+
+    </div><!-- /page one -->
+
+    <script type="text/javascript" src="scripts/platformOverrides.js"></script>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    <script type="text/javascript" src="scripts/index.js"></script>
+</body>
+</html>
